@@ -12,7 +12,7 @@ function distanceTravelledInFeet(start, finish) {
   return start < finish ? (finish - start) * 264 : (start - finish) * 264
 }
 
-function calculatesFarePrice(start, destination) {
+function calculatesFarePrice(start, finish) {
   let feet = distanceTravelledInFeet(start, finish)
   if (feet < 400) {
     fare = 0
@@ -26,5 +26,5 @@ function calculatesFarePrice(start, destination) {
   else if (feet > 400) {
     fare = (0.02 * (feet - 400))
   }
-  return fare 
+  return fare
 }
