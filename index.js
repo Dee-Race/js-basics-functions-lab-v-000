@@ -7,3 +7,7 @@ function distanceFromHqInBlocks(start) {
 function distanceFromHqInFeet(start) {
   return distanceFromHqInBlocks(start) * 264
 }
+
+function distanceTravelledInFeet(start, finish) {
+  return start < finish ? (finish - start) * 264 : (start - finish) * 264
+}
