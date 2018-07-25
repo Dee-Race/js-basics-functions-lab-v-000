@@ -3,3 +3,7 @@
 function distanceFromHqInBlocks(start) {
    return start < 42 ? 42 - start : start - 42
 }
+
+function distanceFromHqInFeet(start) {
+  return distanceFromHqInFeet(start) * 264
+}
